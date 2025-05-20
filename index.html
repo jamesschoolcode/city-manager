@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Management Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>City Management Game</h1>
+
+        <div class="city-info">
+            <h2>City Overview</h2>
+            <p>Population: <span id="population">5</span></p>
+            <p>Resources: <span id="resources">100</span></p>
+        </div>
+
+        <div class="city-view">
+            <h2>City View</h2>
+            <div id="city-grid" class="city-grid">
+                <!-- The city grid where structures will appear -->
+            </div>
+        </div>
+
+        <div class="task-assignment">
+            <h2>Assign Tasks to Residents</h2>
+            <div id="resident-list">
+                <!-- Residents will be listed here -->
+            </div>
+            <div id="task-buttons">
+                <button onclick="assignTask('gathering')">Gather Resources</button>
+                <button onclick="assignTask('building')">Build Structures</button>
+                <button onclick="assignTask('farming')">Farm Crops</button>
+            </div>
+        </div>
+
+        <div class="resident-status">
+            <h2>Resident Status</h2>
+            <ul id="status-list">
+                <!-- Residents' tasks will be displayed here -->
+            </ul>
+        </div>
+
+        <button id="advance-time" onclick="advanceTime()">Advance Time</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
