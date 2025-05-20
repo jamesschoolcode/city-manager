@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.city-info, .task-assignment, .resident-status {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#resident-list {
+    margin: 10px 0;
+}
+
+#task-buttons button {
+    margin: 5px;
+}
+
+#status-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#status-list li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Styles for the city grid */
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.city-grid div {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.city-grid .house {
+    background-color: #8e44ad;
+}
+
+.city-grid .farm {
+    background-color: #27ae60;
+}
+
+.city-grid .factory {
+    background-color: #f39c12;
+}
+
+.city-grid .empty {
+    background-color: #ecf0f1;
+}
